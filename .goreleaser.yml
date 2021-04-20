@@ -32,12 +32,13 @@ archives:
       - README.md
 
 brews:
-  - github:
+  - tap:
       owner: reviewdog
       name: homebrew-tap
     folder: Formula
     homepage:  https://github.com/reviewdog/reviewdog
     description: Automated code review tool integrated with any code analysis tools regardless of programming language.
+    install: reviewdog
     test: |
       system "#{bin}/reviewdog -version"
 
